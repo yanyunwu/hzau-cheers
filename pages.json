@@ -4,11 +4,11 @@
 	    "path" : "pages/match/match",
 	    "style" :                                                                                    
 	    {
-	        "navigationBarTitleText": "匹配大厅",
+	        "navigationBarTitleText": "首页",
 	        "enablePullDownRefresh": false,
 			"usingComponents": {
 				"van-button": "/wxcomponents/vant/dist/button/index",
-				"van-popup": "/wxcomponents/vant/dist/popup/index"
+				"van-switch": "/wxcomponents/vant/dist/switch/index"
 			}
 	    }
 	    
@@ -38,8 +38,11 @@
             "path" : "pages/message/message",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "聊天消息",
-                "enablePullDownRefresh": false
+                "navigationBarTitleText": "留言消息",
+                "enablePullDownRefresh": true,
+				"usingComponenets": {
+					"van-swipe-cell": "/wxcomponents/vant/dist/swipe-cell/index"
+				}
             }
             
         }
@@ -65,7 +68,62 @@
             "path" : "pages/setting/setting",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "设置页面",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/mine",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "账户信息",
+                "enablePullDownRefresh": false,
+				"usingComponenets": {
+					 "van-field": "/wxcomponents/vant/dist/field/index"
+				}
+            }
+            
+        },
+		{
+			"path" : "pages/admin/admin",
+			"style" :                                                                                    
+			{
+			    "navigationBarTitleText": "后台管理",
+			    "enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/account/account",
+			"style" :                                                                                    
+			{
+			    "navigationBarTitleText": "账户管理",
+			    "enablePullDownRefresh": false
+			}
+		}
+        ,{
+            "path" : "pages/about/about",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "关于",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/admin/report/report",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "举报管理",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/admin/message/message",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "消息列表",
                 "enablePullDownRefresh": false
             }
             
